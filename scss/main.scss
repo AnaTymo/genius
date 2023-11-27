@@ -1,0 +1,119 @@
+@import './utils/fonts';
+@import './utils/variables';
+
+@import './base';
+
+@import './utils/utils';
+
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero-section';
+
+@import './layouts/container';
+
+/* Advantages section*/
+@import './layouts/advantages-section';
+
+@import './layouts/section';
+
+/* Traditions section */
+@import './layouts/traditions-section';
+
+@import './utils/texts';
+
+/* Chefs section */
+@import './layouts/chefs-section';
+
+@import './components/chef-card';
+
+/* Formats section */
+@import './layouts/formats-section';
+
+@import './components/_format-card';
+
+@import './components/carousel-button';
+
+/* Contacts section */
+@import './layouts/contacts-section';
+
+/* Footer */
+.footer {
+  padding: 32px 0;
+  position: relative;
+  background-image: url(../Images/footer-background.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(../Images/decor-bread-small.png);
+}
+
+.footer::after {
+  right: 0;
+  width: 380px;
+  height: 190px;
+  background-image: url(../Images/decor-bread-large.png);
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-copyright {
+  font-size: 14px;
+}
+
+/* Modal */
+@import './layouts/modal';
+
+/* Form */
+
+@import './components/input';
+@import './components/form-terms';
